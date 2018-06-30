@@ -1,0 +1,19 @@
+1. Article
+ID
+Title
+Content
+DatePublished
+AuthorID
+ImagePath
+
+2. Author
+ID
+Name
+
+Homepage
+- Header
+- Menu
+- Main - detailed article: title + content + author name + date
+- Right sidebar: most recent news, search by title, 5 latest articles
+
+

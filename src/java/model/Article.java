@@ -6,11 +6,6 @@
 package model;
 
 import java.util.Date;
-
-/**
- *
- * @author lenovo
- */
 public class Article implements IModel{
     private int ID;
     private String Title;

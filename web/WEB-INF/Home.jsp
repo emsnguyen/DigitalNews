@@ -17,7 +17,9 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="pre-header"></div>
+            <div class="pre-header">
+                <p></p>
+            </div>
             <div class="header">
                 <p>My digital news</p>
             </div>
@@ -71,6 +73,8 @@
                 </div>
             </div>
             <div class="footer">
+                <p></p>
+                <div></div>
             </div>
         </div>
     </body>
