@@ -19,7 +19,7 @@ public class HtmlHelper {
             result += generateHyperlink(searchQuery, i, "" + i);
         }
         result += "<a class=\"currentPage\">"+currentPage+"</a>";
-        for (int i = currentPage+1; i < Math.min(currentPage+pageGap, totalPage); i++) {
+        for (int i = currentPage+1; i <= Math.min(currentPage+pageGap, totalPage); i++) {
             result += generateHyperlink(searchQuery, i, "" + i);
         }
         if (currentPage + pageGap < totalPage) {

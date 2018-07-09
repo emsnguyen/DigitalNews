@@ -1,0 +1,118 @@
+html, body {
+    height:100%;
+    width: 100%;
+}
+.wrapper {
+    width: 980px;
+    margin: auto;
+    background-color: white;
+    background-image: none;
+    box-shadow: 0 2px 10px 7px rgba(0,0,0,.29);
+    border-radius: 10px;
+    display: grid;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: "Helvetica";
+}
+
+.pre-header {
+    background-image: url("../images/preheader.jpg");
+    background-repeat: no-repeat;
+}
+.article-image {
+    width: 400px;
+    margin-bottom: 20px;
+}
+.header {
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    padding-top: 5px;
+    height: 50px;
+}
+.menu {
+    background-image: url(../images/menu.jpg);
+    background-repeat: no-repeat;
+    padding-top: 5px;
+    height: 25px;
+    font-size: 15px;
+}
+.footer {
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+}
+.main {
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: url(../images/bg.jpg);
+}
+.content {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 4.6%;
+}
+.article-image img {
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+}
+.right {
+    margin-right: 120px;
+    margin-left: 20px;
+}
+.right input[type="text"] {
+    border-style: dashed;
+    border-color: gray;
+    margin-left: 0;
+    width: 120px;
+}
+.title p {
+    margin-left: 4%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.right label {
+    font-size: 20px;
+    font-weight: bold;
+}
+.go-and-search {
+    margin-left: 5px;
+    border: none;
+    display: inline;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    color: gray;
+}
+.header p, .menu a {
+    font-weight: bold;
+    color: white;
+    margin-left: 100px;
+    text-decoration: none;
+}
+.header p {
+    font-size: 22px;
+    margin-top: 0;
+}
+.most-recent-news {
+    padding-top: 10%;
+}
+.search p {
+    margin-left: 0;
+}
+
+.main .left {
+    padding-left: 30px;
+}
+hr {
+    width: 90%;
+    height: 0.01px;
+}
+.article-link {
+    margin-left: 0;
+    color: #69767e;
+}
+.article-link-wrapper {
+    width: 100%;
+    margin-top: 20px;
+}

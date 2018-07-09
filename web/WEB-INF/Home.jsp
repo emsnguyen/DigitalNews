@@ -5,8 +5,7 @@
 --%>
 
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@taglib prefix="t" tagdir="/WEB-INF/tags/" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,17 +15,8 @@
         <title>Home Page</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="pre-header">
-                <p></p>
-            </div>
-            <div class="header">
-                <p>My digital news</p>
-            </div>
-            <div class="menu">
-                <a href="#">News</a>
-            </div>
-            <div class="main">
+        <t:GenericPage>
+            <jsp:attribute name="left">
                 <div class="detailed-article">
                     <div class="title">
                         <p>${a.title}</p>
@@ -45,37 +35,7 @@
                                                            pattern="MMM dd yyyy - h:mma"/></span>
                     </div>
                 </div>
-                <div class="sidebar">
-                    <!--<div class="comment-icon"></div>-->
-                    <div class="most-recent-news">
-                        <label>Digital News</label>
-                        <p class="crop-long-texts">
-                            ${a.shortDescription}
-                        </p>
-                    </div>
-                    <div class="search">
-                        <label>Search</label>
-                        <form action="search">
-                            <!--search by title-->
-                            <p>
-                                <input name="searchQuery" type="text" value="" required="required"/>
-                                <input class="go-and-search" type="submit" value="Go"/></p>
-                        </form>
-                    </div>
-                    <div class="latest-articles">
-                        <label>Last Articles</label>
-                        <c:forEach items="${articles}" var="a">
-                            <div class="article-link-wrapper">
-                                <a class="article-link" href="home?articleID=${a.ID}">${a.title}</a>
-                            </div>
-                        </c:forEach>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p></p>
-                <div></div>
-            </div>
-        </div>
+            </jsp:attribute>
+        </t:GenericPage>
     </body>
 </html>

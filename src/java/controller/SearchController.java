@@ -43,7 +43,14 @@ public class SearchController extends HttpServlet {
                 if (sCurrentPage == null) {
                     page = 1;
                 } else {
-                    page = Integer.parseInt(sCurrentPage);
+                    //should add try/catch here in case user inputs non-numeric values in the url
+                    try {
+                        page = Integer.parseInt(sCurrentPage);
+                    } catch (Exception ex) {
+                        Logger.getLogger(SearchController.class.getName()).log(Level.SEVERE, null, ex);
+                        getServletContext().getRequestDispatcher("/ErrorPage.jsp").forward(request, response);  
+                        return;
+                    }
                 }
                 int totalRecords = FoundArticles.size();
                 int totalPage = totalRecords / pageSize + ((totalRecords % pageSize > 0) ? 1 : 0);
